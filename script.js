@@ -411,3 +411,18 @@ async function unblockAddress() {
         alert("Unblocking failed.");
     }
 }
+
+function toggleMenu() {
+    const menu = document.getElementById("contractMenu");
+    menu.classList.toggle("hidden");
+}
+
+function copyContractAddress() {
+    const contractAddress = document.getElementById("contractAddress").textContent;
+    navigator.clipboard.writeText(contractAddress).then(() => {
+        alert("Contract address copied to clipboard!");
+    }).catch(err => {
+        console.error("Failed to copy: ", err);
+    });
+}
+
