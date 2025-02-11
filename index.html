@@ -11,6 +11,21 @@
     <div class="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-6 text-center">
         <h1 class="text-3xl font-bold mb-4">AiMixcoin (AIMX) Dashboard</h1>
 
+        <div class="relative">
+            <button onclick="toggleMenu()" class="absolute top-0 right-0 text-2xl p-2">
+            <b>    ⋮ </b>
+            </button>
+            <div id="contractMenu" class="hidden absolute right-0 mt-10 w-64 bg-white shadow-lg rounded-lg p-4">
+                <h2 class="text-lg font-semibold">AiMix coin contract address</h2>
+                <p id="contractAddress" class="text-sm font-mono bg-gray-200 p-2 rounded break-all">
+                    0xfe33a40e0b0eA38df5850a8cDdD9863b9351cd4a
+                </p>
+                <button onclick="copyContractAddress()" class="mt-2 bg-blue-500 hover:bg-blue-600 text-white py-1 px-3 rounded text-sm">
+                    Copy Address
+                </button>
+            </div>
+        </div>
+
         <button onclick="connectWallet()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Connect MetaMask</button>
         <p id="userAddress" class="mt-2 text-gray-600">Not connected</p>
         
