@@ -281,9 +281,9 @@ const contractABI = [
 		"type": "function"
 	}
 ];
-const contractAddress = "0xfe33a40e0b0eA38df5850a8cDdD9863b9351cd4a"; // Replace with your contract address
+const contractAddress = "0xfe33a40e0b0eA38df5850a8cDdD9863b9351cd4a";
 
-// ✅ Connect to MetaMask and initialize ethers.js
+
 async function connectWallet() {
     if (!window.ethereum) {
         alert("Please install MetaMask!");
@@ -308,7 +308,7 @@ async function connectWallet() {
     }
 
 
-// ✅ Get Total Supply
+
 async function getTotalSupply() {
     if (!contract) {
         alert("Please connect MetaMask first.");
@@ -324,7 +324,7 @@ async function getTotalSupply() {
     }
 }
 
-// ✅ Transfer Tokens
+
 async function transferTokens() {
     if (!contract) return alert("Connect to MetaMask first.");
     
@@ -347,7 +347,7 @@ async function transferTokens() {
     }
 }
 
-// ✅ Mint Tokens (Only Owner)
+
 async function mintTokens() {
     if (!contract) return alert("Connect to MetaMask first.");
 
@@ -363,7 +363,7 @@ async function mintTokens() {
     }
 }
 
-// ✅ Burn Tokens
+
 async function burnTokens() {
     if (!contract) return alert("Connect to MetaMask first.");
 
@@ -378,7 +378,7 @@ async function burnTokens() {
     }
 }
 
-// ✅ Block Address (Only Owner)
+
 async function blockAddress() {
     if (!contract) return alert("Connect to MetaMask first.");
 
@@ -395,7 +395,7 @@ async function blockAddress() {
     }
 }
 
-// ✅ Unblock Address (Only Owner)
+
 async function unblockAddress() {
     if (!contract) return alert("Connect to MetaMask first.");
 
